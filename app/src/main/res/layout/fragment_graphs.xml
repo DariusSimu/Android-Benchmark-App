@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Main title -->
+        <TextView
+            android:id="@+id/title_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Results Graphs"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- CPU Single-Core -->
+        <TextView
+            android:id="@+id/title_cpu_single"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPU Single-Core (seconds)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_cpu_single"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- CPU Multi-Core -->
+        <TextView
+            android:id="@+id/title_cpu_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPU Multi-Core (seconds)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_cpu_multi"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- GPU -->
+        <TextView
+            android:id="@+id/title_gpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPU (FPS)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_gpu"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Memory -->
+        <TextView
+            android:id="@+id/title_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory Bandwidth (GB/s)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_memory"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Storage -->
+        <TextView
+            android:id="@+id/title_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage Throughput (MB/s)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_storage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>
